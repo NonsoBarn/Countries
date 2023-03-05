@@ -21,7 +21,7 @@ const CountryDetails = () => {
   } = useFetch(`https://restcountries.com/v3.1/name/${name}`);
 
   return (
-    <div className="grid md:grid-cols-2 px-14 py-10 md:px-0 md:gap-x-0 max-w-fit dark:text-gray-200 h-screen">
+    <div className="grid md:grid-cols-2 px-14 py-10 md:px-0 md:gap-x-0 max-w-fit dark:text-gray-200 h-full">
       <div className="lg:pl-14">
         <div className=" pt-4 pb-5 md:pb-16">
           <Link
@@ -84,8 +84,7 @@ const CountryDetails = () => {
           </div>
         </div>
         <p className="font-semibold text-sm pb-0.5 pt-5">
-          Border Countries:{" "}
-          <span className="font-normal p-2 b">{borders}</span>
+          Border Countries: <span className="font-normal p-2 b">{borders}</span>
         </p>
       </div>
     </div>
